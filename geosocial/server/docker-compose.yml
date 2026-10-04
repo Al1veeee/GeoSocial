@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: geosocial-db
+    environment:
+      POSTGRES_DB: geosocial
+      POSTGRES_USER: geosocial
+      POSTGRES_PASSWORD: geosocial
+    ports:
+      - "5432:5432"
+    volumes:
+      - geosocial-pgdata:/var/lib/postgresql/data
+
+volumes:
+  geosocial-pgdata:

@@ -1,0 +1,10 @@
+# Gradle / IDE
+.gradle/
+build/
+.idea/
+*.iml
+local.properties
+
+# Секреты
+google-services.json
+firebase-service-account.json

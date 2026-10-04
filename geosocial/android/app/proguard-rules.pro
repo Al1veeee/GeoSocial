@@ -1,0 +1,1 @@
+-keep class com.example.geosocial.data.remote.dto.** { *; }
